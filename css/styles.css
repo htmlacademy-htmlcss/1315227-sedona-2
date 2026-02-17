@@ -1245,35 +1245,29 @@ body {
   transition: background-color var(--transition-time), color var(--transition-time);
 }
 
-.pagination__link:hover,
-.pagination__link:not(:active):focus {
+.pagination__link:not(.pagination__link--current):not(.pagination__link--dots):hover,
+.pagination__link:not(.pagination__link--current):not(.pagination__link--dots):not(:active):focus {
   color: #ffffff;
   text-decoration: none;
   background-color: var(--base-button-additional-hover-background);
   outline: none;
 }
 
-.pagination__link:focus {
+.pagination__link:not(.pagination__link--current):not(.pagination__link--dots):focus {
   outline: none;
 }
 
-.pagination__link:active {
+.pagination__link:not(.pagination__link--current):not(.pagination__link--dots):active {
   color: var(--base-button-active-color);
   background-color: var(--base-button-additional-background);
 }
 
-.pagination__link--dots,
-.pagination__link--dots:hover,
-.pagination__link--dots:focus-visible,
-.pagination__link--dots:active {
+.pagination__link--dots {
   color: #000000;
   background-color: transparent;
 }
 
-.pagination__link--current,
-.pagination__link--current:hover,
-.pagination__link--current:focus-visible,
-.pagination__link--current:active {
+.pagination__link--current {
   color: #000000;
   background-color: #f2f2f2;
 }
