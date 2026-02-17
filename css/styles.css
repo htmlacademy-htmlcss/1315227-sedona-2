@@ -1160,6 +1160,16 @@ body {
 .product-card__link {
   display: block;
   text-decoration: none;
+  transition: opacity var(--transition-time);
+}
+
+.product-card__link:hover,
+.product-card__link:focus {
+  opacity: 0.8;
+}
+
+.product-card__link:focus {
+  outline: none;
 }
 
 .product-card__image {
