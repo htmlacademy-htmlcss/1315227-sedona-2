@@ -947,6 +947,20 @@ body {
 .breadcrumbs__list-link {
   line-height: 21px;
   color: #ffffff;
+  text-decoration: none;
+  transition: opacity var(--transition-time);
+}
+
+.breadcrumbs__list-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs__list-link:not(:active):focus {
+  outline: none;
+}
+
+.breadcrumbs__list-link:active {
+  opacity: 0.3;
 }
 
 .breadcrumbs__list-link--home {
