@@ -845,7 +845,7 @@ body {
 
 .price-group__input::placeholder {
   color: #000000;
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .price-group__label:first-child .price-group__input {
