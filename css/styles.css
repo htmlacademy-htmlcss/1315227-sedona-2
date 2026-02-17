@@ -794,6 +794,10 @@ body {
   color: #ffffff;
 }
 
+.catalog-filter__form-price-range {
+  margin-top: 44px;
+}
+
 .price-group {
   display: flex;
   gap: 0 2px;
@@ -863,6 +867,52 @@ body {
   color: #000000;
   transform: translateY(-50%);
   opacity: 0.3;
+}
+
+.price-range {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.price-range__progress {
+  width: 72%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.price-range__button {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.price-range__button--right {
+  left: 72%;
+}
+
+.price-range__button:not(:disabled):not(:active):focus {
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.price-range__button:not(:disabled):active {
+  outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.price-range__button:disabled {
+  cursor: not-allowed;
 }
 
 .checkbox {
