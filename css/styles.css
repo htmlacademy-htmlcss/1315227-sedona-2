@@ -820,6 +820,13 @@ body {
   border: 0;
   border-radius: var(--base-border-radius);
   transition: background-color var(--transition-time);
+  appearance: textfield;
+}
+
+.price-group__input::-webkit-outer-spin-button,
+.price-group__input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
 }
 
 .price-group__input:hover:not(:focus) {
