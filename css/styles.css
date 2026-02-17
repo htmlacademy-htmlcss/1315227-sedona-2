@@ -868,6 +868,7 @@ body {
 .checkbox {
   position: relative;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .checkbox__input {
