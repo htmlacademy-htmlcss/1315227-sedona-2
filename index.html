@@ -146,7 +146,7 @@
           <h2 class="search__title">Заинтересовались?</h2>
           <p class="search__description">Укажите предполагаемые даты поездки, <br>и мы покажем вам
             лучшие предложения гостиниц в Седоне</p>
-          <button class="search__button button button--main" type="button" aria-label="Открыть модальное окно">Поиск
+          <button class="search__button button button--main" type="button" aria-label="Открыть модальное окно" aria-labelledby="search-button-label">Поиск
             гостиницы в седоне</button>
         </section>
         <section class="subscribe" data-test="subscribe">
@@ -234,7 +234,7 @@
       </footer>
     </div>
 
-    <div class="modal" tabindex="-1">
+    <div class="modal" tabindex="-1" role="dialog" id="search-button-label">
       <div class="modal__dialog">
         <div class="modal__content">
           <button class="modal__close" type="button">
