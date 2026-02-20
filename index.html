@@ -168,7 +168,7 @@
       <footer class="page__footer page-footer" data-test="footer">
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank" rel="noreferrer noopener">
+            <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
               <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
                    aria-label="Вконтакте">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -179,7 +179,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank" rel="noreferrer noopener">
+            <a class="social__link" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
               <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
                    aria-label="Telegram">
                 <path d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z"
@@ -189,7 +189,8 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank" rel="noreferrer noopener">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+               rel="noreferrer noopener">
               <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
                    aria-label="Youtube">
                 <path d="M18.607 0H3.17413C1.31343 0 0 1.59375 0 3.4V13.4937C0 15.4062 1.31343 17 3.17413 17H18.8259C20.4677 17 22 15.4062 22 13.6V3.4C21.7811 1.59375 20.4677 0 18.607 0ZM7.66169 12.5375V4.4625L14.995 8.5L7.66169 12.5375Z"
@@ -200,7 +201,8 @@
           </li>
         </ul>
         <a class="page-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+           rel="noreferrer noopener">
           <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
                aria-label="Логотип htmlacademy">
             <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="currentColor" />
@@ -230,6 +232,112 @@
           <span class="visually-hidden">htmlacademy</span>
         </a>
       </footer>
+    </div>
+
+    <div class="modal" tabindex="-1">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                 aria-label="Закрыть модальное окно">
+              <path d="M16.8113 4.10362L15.519 2.81131L9.81128 8.519L4.10359 2.81131L2.81128 4.10362L8.51897 9.81131L2.81128 15.519L4.10359 16.8113L9.81128 11.1036L15.519 16.8113L16.8113 15.519L11.1036 9.81131L16.8113 4.10362Z"
+                    fill="currentColor" />
+            </svg>
+            <span class="visually-hidden">Закрыть модальное окно</span>
+          </button>
+          <h3 class="modal__title">Поиск гостиницы в Седоне</h3>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="modal__fieldset">
+              <legend class="visually-hidden">Параметры поиска</legend>
+              <div class="modal__field">
+                <label class="modal__field-label" for="date-to">Дата заезда:</label>
+                <div class="modal__field-input-wrap">
+                  <input class="modal__field-input field-text field-text--date" type="text" name="date-to" id="date-to"
+                         value="27 апреля 2020" placeholder="Введите дату" required>
+                  <p class="modal__label-message modal__label-message--error">Мы не можем отправить вас в прошлое.
+                  </p>
+                </div>
+              </div>
+              <div class="modal__field">
+                <label class="modal__field-label" for="date-from">Дата выезда:</label>
+                <div class="modal__field-input-wrap">
+                  <input class="modal__field-input field-text field-text--date" type="text" name="date-from"
+                         id="date-from" value="1 сентября 2023" placeholder="Введите дату" required>
+                  <p class="modal__label-message">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
+              </div>
+              <div class="modal__group">
+                <div class="modal__field">
+                  <label class="modal__field-label" for="adult">Взрослые:</label>
+                  <div class="field-number">
+                    <div class="field-number__button-wrap field-number__button-wrap--left">
+                      <button class="field-number__button button" type="button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             role="img" aria-label="Минус">
+                          <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Уменьшить количество взрослых</span>
+                      </button>
+                    </div>
+                    <input class="field-text field-text--number" type="number" name="adult" id="adult" value="2"
+                           placeholder="0" min="0" step="1">
+                    <div class="field-number__button-wrap field-number__button-wrap--right">
+                      <button class="field-number__button button" type="button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             role="img" aria-label="Плюс">
+                          <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Увеличить количество взрослых</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal__field">
+                  <div class="modal__field-icon">
+                    <label class="modal__field-label" for="children">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             role="img" aria-label="Тултип">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z"
+                                fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Показать тултип</span>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                        которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
+                        бесплатно.</span>
+                    </span>
+                  </div>
+                  <div class="field-number">
+                    <div class="field-number__button-wrap field-number__button-wrap--left">
+                      <button class="field-number__button button" type="button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             role="img" aria-label="Минус">
+                          <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Уменьшить количество детей</span>
+                      </button>
+                    </div>
+                    <input class="field-text field-text--number" type="number" name="children" id="children" value="2"
+                           placeholder="0" min="0" step="1">
+                    <div class="field-number__button-wrap field-number__button-wrap--right">
+                      <button class="field-number__button button" type="button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             role="img" aria-label="Плюс">
+                          <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+                        </svg>
+                        <span class="visually-hidden">Увеличить количество детей</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <button class="modal__submit button button--secondary" type="submit">Найти</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 
