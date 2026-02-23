@@ -21,7 +21,6 @@
   --base-button-active-color: rgba(255, 255, 255, 0.3);
   --base-focus-color: #83b3d3;
   --base-section-background: #3f5e72;
-  --base-container-width: 1060px;
   --star-size: 18px;
   --star-gap: 6px;
   --transition-time: 0.3s;
@@ -274,8 +273,7 @@ body {
   position: relative;
   z-index: 1;
   display: flex;
-  width: var(--base-container-width);
-  margin: 0 auto;
+  padding: 0 70px;
 }
 
 .page-header__logo {
@@ -554,7 +552,7 @@ body {
 }
 
 .advantages__title {
-  max-width: 620px;
+  max-width: 660px;
   margin: 0 auto 25px;
   font-weight: var(--base-heading-font-weight);
   font-size: 30px;
@@ -697,9 +695,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: var(--base-container-width);
-  margin: 0 auto;
-  padding: 40px 0 30px;
+  padding: 40px 70px 30px;
 }
 
 .page-footer__phone {
