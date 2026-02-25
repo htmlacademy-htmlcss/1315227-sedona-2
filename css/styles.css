@@ -100,6 +100,12 @@ body {
   outline: none;
 }
 
+.button:disabled {
+  color: var(--base-button-color);
+  background-color: var(--base-button-disabled-background);
+  cursor: not-allowed;
+}
+
 .button--main {
   color: var(--base-button-color);
   text-transform: uppercase;
@@ -115,11 +121,6 @@ body {
 .button--main:not(:disabled):active {
   color: var(--base-button-active-color);
   background-color: var(--base-button-background);
-}
-
-.button--main:disabled {
-  color: var(--base-button-color);
-  background-color: var(--base-button-disabled-background);
 }
 
 .button--secondary {
@@ -139,11 +140,6 @@ body {
   background-color: var(--base-button-additional-background);
 }
 
-.button--secondary:disabled {
-  color: var(--base-button-color);
-  background-color: var(--base-button-disabled-background);
-}
-
 .button--success {
   color: var(--base-button-color);
   text-transform: uppercase;
@@ -159,11 +155,6 @@ body {
 .button--success:not(:disabled):active {
   color: var(--base-button-active-color);
   background-color: var(--base-button-selected-background);
-}
-
-.button--success:disabled {
-  color: var(--base-button-color);
-  background-color: var(--base-button-disabled-background);
 }
 
 .button--link {
@@ -229,13 +220,18 @@ body {
   box-shadow: none;
 }
 
-.field-text:hover:not(:focus) {
+.field-text:not(:disabled):not(:focus):hover {
   background-color: #e5e5e5;
 }
 
-.field-text:focus {
+.field-text:not(:disabled):focus {
   background-color: #e5e5e5;
   outline: 3px solid var(--base-focus-color);
+}
+
+.field-text:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .field-text::-moz-placeholder {
@@ -1591,16 +1587,16 @@ body {
   background-color: transparent;
 }
 
-.field-number__button:hover {
+.field-number__button:not(:disabled):hover {
   color: var(--base-additional-text-color);
 }
 
-.field-number__button:not(:active):focus {
+.field-number__button:not(:disabled):not(:active):focus {
   color: var(--base-additional-text-color);
   outline: 3px solid var(--base-focus-color);
 }
 
-.field-number__button:active {
+.field-number__button:not(:disabled):active {
   color: var(--base-additional-text-color);
   opacity: 0.2;
 }
