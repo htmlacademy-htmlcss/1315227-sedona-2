@@ -123,6 +123,11 @@ body {
   background-color: var(--base-button-background);
 }
 
+.button--main:focus-visible {
+  outline: 2px solid #ad9081;
+  outline-offset: 0;
+}
+
 .button--secondary {
   color: var(--base-button-color);
   text-transform: uppercase;
@@ -140,6 +145,11 @@ body {
   background-color: var(--base-button-additional-background);
 }
 
+.button--secondary:focus-visible {
+  outline: 2px solid #a5d0ec;
+  outline-offset: 0;
+}
+
 .button--success {
   color: var(--base-button-color);
   text-transform: uppercase;
@@ -155,6 +165,11 @@ body {
 .button--success:not(:disabled):active {
   color: var(--base-button-active-color);
   background-color: var(--base-button-selected-background);
+}
+
+.button--success:focus-visible {
+  outline: 2px solid #afe186;
+  outline-offset: 0;
 }
 
 .button--link {
