@@ -274,6 +274,11 @@ body {
   width: 140px;
   height: 64px;
   margin-right: 29px;
+  transition: opacity var(--transition-time);
+}
+
+.page-header__logo:hover {
+  opacity: 0.8;
 }
 
 .page-header__logo img {
