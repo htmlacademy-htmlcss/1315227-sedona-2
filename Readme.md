@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Овчинников](https://up.htmlacademy.ru/htmlcss-individual/2/user/1315227).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Личный проект «Седона»](https://ocupuc123.github.io/1315227-sedona-2/).
 
 ---
 

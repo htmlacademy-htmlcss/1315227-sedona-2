@@ -132,7 +132,7 @@
         <section class="search" data-test="search">
           <h2 class="search__title">Заинтересовались?</h2>
           <p class="search__description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="search__button button button--main" type="button" aria-label="Открыть модальное окно" aria-labelledby="search-button-label" onclick="openModal()">Поиск гостиницы в седоне</button>
+          <button class="search__button button button--main" type="button" aria-label="Открыть модальное окно" aria-labelledby="search-button-label">Поиск гостиницы в седоне</button>
         </section>
         <section class="subscribe" data-test="subscribe">
           <div class="subscribe__inner">
@@ -196,10 +196,10 @@
       </footer>
     </div>
 
-    <div class="modal" tabindex="-1" role="dialog" id="search-button-label">
+    <div class="modal" tabindex="-1" role="dialog" id="search-button-label" style="display: block;">
       <div class="modal__dialog">
         <div class="modal__content">
-          <button class="modal__close" type="button" onclick="closeModal()">
+          <button class="modal__close" type="button">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.8113 4.10362L15.519 2.81131L9.81128 8.519L4.10359 2.81131L2.81128 4.10362L8.51897 9.81131L2.81128 15.519L4.10359 16.8113L9.81128 11.1036L15.519 16.8113L16.8113 15.519L11.1036 9.81131L16.8113 4.10362Z" fill="currentColor" />
             </svg>
@@ -286,19 +286,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-      const modal = document.querySelector('.modal');
-
-      const openModal = ()=> {
-        modal.style.display = 'block';
-      }
-
-      const closeModal = ()=> {
-        modal.style.display = 'none';
-      }
-
-    </script>
   </body>
 
 </html>
