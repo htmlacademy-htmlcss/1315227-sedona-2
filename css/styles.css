@@ -687,8 +687,11 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 40px 70px 30px;
+}
+
+.page-footer__social {
+  margin-top: 5px;
 }
 
 .page-footer__phone {
@@ -717,6 +720,7 @@ body {
   display: block;
   width: 115px;
   height: 33px;
+  margin-top: 8px;
   color: var(--base-additional-text-color);
   transition: color var(--transition-time);
 }
