@@ -174,6 +174,7 @@ body {
 
 .button--link:disabled {
   opacity: 0.1;
+  background-color: transparent;
 }
 
 .field-text {
@@ -264,6 +265,7 @@ body {
   position: relative;
   z-index: 1;
   display: flex;
+  align-items: flex-start;
   padding: 0 70px;
 }
 
@@ -293,7 +295,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   margin: 0 0 0 auto;
+  max-width: 350px;
   padding: 0;
   list-style: none;
 }
@@ -318,9 +322,9 @@ body {
 }
 
 .page-header__button {
-  margin-left: 20px;
   padding-right: 34px;
   padding-left: 34px;
+  margin: 10px 0 10px 20px;
   white-space: nowrap;
 }
 
@@ -344,6 +348,7 @@ body {
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 500px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -429,16 +434,23 @@ body {
 }
 
 .advantages__list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 385px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
-  padding: 20px;
+}
+
+.advantages__list-content {
+  height: 100%;
+  padding: 114px 83px 30px;
+}
+
+.advantages__list-item--wide .advantages__list-content {
+  padding-top: 104px;
+  width: 400px;
 }
 
 .advantages__list-item--wide {
+  display: flex;
   grid-column: 1 / -1;
   padding: 0;
 }
@@ -465,6 +477,10 @@ body {
 
 .advantages__list-item--white-bg {
   background-color: #ffffff;
+}
+
+.advantages__list--with-icons .advantages__list-content {
+  padding-top: 81px;
 }
 
 .advantages__list--with-icons .advantages__list-title {
@@ -498,25 +514,12 @@ body {
   background-image: url("../images/advantage-icon-souvenirs.svg");
 }
 
-.advantages__list-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  width: 400px;
-  padding: 20px;
-}
-
 .advantages__list-image {
   display: block;
   flex-grow: 1;
   align-self: stretch;
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-.advantages__list-content {
-  width: 230px;
 }
 
 .advantages__list-title {
@@ -684,8 +687,11 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 40px 70px 30px;
+}
+
+.page-footer__social {
+  margin-top: 5px;
 }
 
 .page-footer__phone {
@@ -714,6 +720,7 @@ body {
   display: block;
   width: 115px;
   height: 33px;
+  margin-top: 8px;
   color: var(--base-additional-text-color);
   transition: color var(--transition-time);
 }
@@ -896,6 +903,7 @@ body {
 }
 
 .checkbox {
+  display: block;
   position: relative;
   padding-left: 36px;
   cursor: pointer;
@@ -903,7 +911,7 @@ body {
 
 .checkbox__input {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   display: block;
   width: 20px;
@@ -1031,6 +1039,7 @@ body {
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
+  background-color: transparent;
   border: 2px solid #e5e5e5;
   border-radius: var(--base-border-radius);
   cursor: pointer;
@@ -1058,13 +1067,13 @@ body {
 
 .catalog-products__header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto 40px;
 }
 
 .catalog-products__found-items {
   max-width: 380px;
-  margin: 0 auto 0 0;
+  margin: 6px auto 0 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1073,10 +1082,11 @@ body {
 }
 
 .catalog-products__controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 280px;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  justify-content: flex-end;
+  max-width: 170px;
+  min-width: 160px;
   margin: 0;
   margin-left: 71px;
   padding: 0;
@@ -1178,6 +1188,7 @@ body {
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 16px;
+  margin-top: auto;
   font-size: 18px;
   line-height: 21px;
   gap: 0 20px;
@@ -1187,7 +1198,6 @@ body {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: auto;
   margin-bottom: 16px;
   gap: 0 20px;
 }
@@ -1498,7 +1508,7 @@ body {
   display: none;
   width: 256px;
   margin-top: 15px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 23px 22px;
   line-height: 20px;
   color: #ffffff;
   text-transform: none;
