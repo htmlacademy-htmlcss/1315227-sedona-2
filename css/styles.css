@@ -320,6 +320,10 @@ body {
   color: var(--base-button-background);
 }
 
+.page-header__controls-link:active {
+  color: rgba(117, 97, 87, 0.6);
+}
+
 .page-header__button {
   width: 160px;
   margin: 14px 0 10px 20px;
@@ -361,6 +365,7 @@ body {
   color: var(--base-additional-text-color);
   text-transform: capitalize;
   text-decoration: none;
+  transition: color var(--transition-time);
 }
 
 .main-nav__list-link::after {
@@ -372,12 +377,20 @@ body {
   height: 2px;
   background-color: #756257;
   opacity: 0;
-  transition: opacity var(--transition-time);
+  transition: opacity var(--transition-time), background-color var(--transition-time);
 }
 
 .main-nav__list-link--current::after,
 .main-nav__list-link:hover::after {
   opacity: 1;
+}
+
+.main-nav__list-link:active {
+  color: rgba(117, 97, 87, 0.6);
+}
+
+.main-nav__list-link:active::after {
+  background-color: rgba(117, 97, 87, 0.6);
 }
 
 .hero {
